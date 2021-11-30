@@ -1,0 +1,43 @@
+1. git checkout -b Postman
+   git checkout -b Jmeter
+   git checkout -b CheckLists
+   git checkout -b Bag_Reports
+   git checkout -b SQL
+   git checkout -b Charles
+   git checkout -b Mobile_testing
+
+2. git push --set-upstream origin Postman
+   git push --set-upstream origin Jmeter
+   git push --set-upstream origin CheckLists
+   git push --set-upstream origin CheckLists
+   git push --set-upstream origin Bag_Reports
+   git push --set-upstream origin SQL
+   git push --set-upstream origin Charles
+   git push --set-upstream origin Mobile_testing
+
+3. git checkout Bag_Reports
+   touch bag-report_1.xlsx
+   
+4. git add .
+   git commit -m "Create bag-report_1.xlsx"
+   git push
+
+5. git checkout main
+   git merge Bag_Reports
+
+6. git add .
+   git push
+
+7. git checkout CheckLists
+   touch checklist_1.xlsx
+
+8. git add .
+   git commit -m "Create checklist_1.xlsx"
+   git push
+   
+9. заходим на внешний репозиторий -> создаем New Pull Request 
+   base: main <- compare: CheckLists = enter
+   create pull request 
+
+10. merge pull request
+    confirm merge
